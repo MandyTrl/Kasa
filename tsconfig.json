@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
@@ -14,11 +15,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "paths": {
       "@/*": ["./src/*"],
       "@assets/*": ["./public/assets/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "./.eslintrc.json"],
+  "exclude": ["node_modules"]
 }

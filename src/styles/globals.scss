@@ -1,0 +1,66 @@
+:root {
+  --main-color: #ff6060;
+  --grey: #f6f6f6;
+}
+
+body {
+  margin: 0;
+  padding: 45px 100px;
+  font-family: -apple-system, 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #ffff;
+}
+
+footer img {
+  width: 122px;
+  fill: #ffff;
+  padding-top: 69px;
+  padding-bottom: 29px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+header li {
+  display: inline;
+  margin-left: 56px;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.banner-img {
+  width: 1240px;
+  height: 223px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.locations {
+  background-color: var(--grey);
+  border-radius: 25px;
+}
