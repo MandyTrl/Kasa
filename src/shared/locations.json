@@ -1,7 +1,7 @@
 [
   {
     "id": "c67ab8a7",
-    "title": "Appartement cosy",
+    "title": "Appartement cosy au coeur du 17e",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
@@ -64,7 +64,7 @@
   },
   {
     "id": "7af00cd6",
-    "title": "Nid douillet au coeur du 11ème",
+    "title": "Nid douillet au coeur du 11e",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-3-1.jpg",
@@ -84,7 +84,7 @@
   },
   {
     "id": "0979876d",
-    "title": "Appartement de Standing - 10e",
+    "title": "Appartement de standing - 10e",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
@@ -106,7 +106,7 @@
   },
   {
     "id": "f72a452f",
-    "title": "Studio d'artiste",
+    "title": "Studio d'artiste dans le 18e",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-5-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-5-1.jpg",
@@ -127,7 +127,7 @@
   },
   {
     "id": "b4c67936",
-    "title": "Cheap - Studio 18ème",
+    "title": "Studio proche commerces - 18ème",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-6-1.jpg",
@@ -169,7 +169,7 @@
   },
   {
     "id": "cb2f9222",
-    "title": "Suite familiale",
+    "title": "Appartement avec suite familiale - Montparnasse",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-8-1.jpg",
@@ -190,7 +190,7 @@
   },
   {
     "id": "d60ca600",
-    "title": "Appartement moderne sur parc",
+    "title": "Appartement moderne avec vue sur parc",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-9-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-9-1.jpg",
@@ -210,7 +210,7 @@
   },
   {
     "id": "2cf259e1",
-    "title": "Charmant Studio Marais",
+    "title": "Charmant studio au coeur du Marais",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-10-1.jpg",
@@ -230,7 +230,7 @@
   },
   {
     "id": "5323c29b",
-    "title": "Studio fonctionnel République",
+    "title": "Studio fonctionnel - République",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-11-3.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-11-3.jpg",
@@ -271,7 +271,7 @@
   },
   {
     "id": "7cbb378e",
-    "title": "Grande Maison proche banlieue",
+    "title": "Maison proche banlieue",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-13-2.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-13-2.jpg",
@@ -310,7 +310,7 @@
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-4.jpg",
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-14-5.jpg"
     ],
-    "description": "Maison T5. Idéale pour grands groupes. 45 minutes de Paris Saint-Lazare.",
+    "description": "Maison T5 à 45 minutes de Paris Saint-Lazare.",
     "host": {
       "name": "Karen Guillet",
       "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-9.jpg"
@@ -354,7 +354,7 @@
   },
   {
     "id": "1e180563",
-    "title": "Charmant apt aux portes de Paris",
+    "title": "Charmant appartement aux portes de Paris",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-16-1.jpg",
@@ -375,7 +375,7 @@
   },
   {
     "id": "2139a317",
-    "title": "Cheap - Chambre Paris 20",
+    "title": "Chambre - Paris 20",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-17-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-17-1.jpg"
@@ -392,7 +392,7 @@
   },
   {
     "id": "6ff132c6",
-    "title": "Charmant studio",
+    "title": "Charmant studio - Paris 13e",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-18-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-18-1.jpg",
@@ -411,7 +411,7 @@
   },
   {
     "id": "cb02d69b",
-    "title": "Magnifique appartement Rivoli",
+    "title": "Magnifique appartement sur de Rivoli",
     "cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg",
     "pictures": [
       "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-19-1.jpg"

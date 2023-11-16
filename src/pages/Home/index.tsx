@@ -1,8 +1,8 @@
 import React from 'react'
+import Locations from '../../shared/locations.json'
+import BeachLandscape from '../../assets/beach-landscape.png'
 import Card, { type LocationType } from '../../components/Card'
 import Banner from '../../components/Banner'
-import BeachLandscape from '../../assets/beach-landscape.png'
-import Locations from '../../shared/locations.json'
 
 const Home = () => {
   return (
