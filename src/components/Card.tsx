@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 type HostType = {
   name: string
@@ -12,22 +13,24 @@ export type LocationType = {
   pictures: string[]
   description: string
   host: HostType
-  rating: string
+  rating: number
   location: string
   equipments: string[]
   tags: string[]
 }
 
-type CardProps = {
+export type CardProps = {
   location: LocationType
 }
 
 const Card = ({ location }: CardProps) => {
   return (
-    <div className="card">
-      <img src={location.cover} alt={location.title} className="card-img" />
-      <p>{location.title}</p>
-    </div>
+    <Link to={`/logement/${location.id}`}>
+      <div className="card">
+        <img src={location.cover} alt={location.title} className="card-img" />
+        <p>{location.title}</p>
+      </div>
+    </Link>
   )
 }
 

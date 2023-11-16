@@ -1,11 +1,11 @@
 import React from 'react'
-import Landscape from '../../assets/outdoor.png'
+import AboutBanner from '../../assets/about-banner.webp'
 import Banner from '../../components/Banner'
 
 const About = () => {
   return (
     <div className="main">
-      <Banner imgSrc={Landscape} />
+      <Banner imgSrc={AboutBanner} />
     </div>
   )
 }

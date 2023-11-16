@@ -102,7 +102,6 @@ body {
 footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: 100vw;
   margin: auto 0;
@@ -146,6 +145,13 @@ a:hover {
   border-radius: 25px;
 }
 
+.banner-location-img {
+  width: 1240px;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
 .main {
   width: 100%;
   max-width: 1240px;
@@ -180,7 +186,7 @@ a:hover {
 }
 
 .card p {
-  z-index: 5;
+  z-index: 2;
   position: relative;
   width: 220px;
   left: 20px;
@@ -189,6 +195,15 @@ a:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.locations a {
+  text-decoration: none;
+}
+
+a p:hover {
+  border-bottom: 3px solid var(--main-color);
+  padding-bottom: 2px;
 }
 
 //ERROR PAGE
@@ -213,4 +228,69 @@ a:hover {
 .main-error a {
   font-size: 18px;
   text-decoration: underline;
+}
+
+//LOCATION
+.location {
+  color: var(--main-color);
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.location-reference {
+  font-size: 18px;
+}
+
+.location-reference h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 0px;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  padding-left: 10px;
+}
+
+.host p {
+  line-height: 8px;
+}
+
+.type {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+//TAGS
+.tags {
+  display: flex;
+  flex-direction: row;
+}
+
+.tag {
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 10px;
+  padding: 3px 23px;
 }
