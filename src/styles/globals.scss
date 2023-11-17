@@ -311,14 +311,34 @@ a p:hover {
 }
 
 //CAROUSSEL
-.caroussel {
+.inner-slider {
   width: 1240px;
   height: 415px;
 }
 
-.caroussel img {
+.slider img {
   width: 1240px;
   height: 415px;
   object-fit: cover;
   border-radius: 25px;
+}
+
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+  color: #fff;
+}
+
+.right-arrow {
+  right: 32px;
+}
+
+.left-arrow {
+  left: 32px;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import type { LocationType } from '@/components/Card'
 import Banner from '../../components/Banner'
-import Caroussel from '../../components//ui/Caroussel'
+import Slider from '../../components/ui/Slider'
 import Tag from '../../components/ui/Tag'
 import Rating from '../../components/ui/Rating'
 import Locations from '../../shared/locations.json'
@@ -18,7 +18,7 @@ const Logement = () => {
     <></>
   ) : (
     <div className="main">
-      <Caroussel />
+      <Slider images={location.pictures} />
       {/* <Banner imgSrc={location?.pictures[0]} isLocation /> */}
 
       <div className="main-logement">
