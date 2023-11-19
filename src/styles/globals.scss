@@ -314,9 +314,10 @@ a p:hover {
 .inner-slider {
   width: 1240px;
   height: 415px;
+  position: relative;
 }
 
-.slider img {
+.slider-img {
   width: 1240px;
   height: 415px;
   object-fit: cover;
@@ -328,17 +329,22 @@ a p:hover {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  font-size: 45px;
-  color: #fff;
-  z-index: 1;
   cursor: pointer;
-  color: #fff;
+  width: 80px;
 }
 
 .right-arrow {
-  right: 32px;
+  right: 35px;
 }
 
 .left-arrow {
-  left: 32px;
+  left: 35px;
+}
+
+.pagination {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  color: #ffff;
+  font-size: 20px;
 }
