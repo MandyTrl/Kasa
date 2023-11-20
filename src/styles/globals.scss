@@ -353,29 +353,48 @@ a p:hover {
 .details {
   display: flex;
   justify-content: space-between;
+  margin-top: 31px;
 }
+
 .collapse {
   width: 582px;
 }
 
+.collapse ul {
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+.collapse li {
+  list-style: none;
+}
+
 .collapse-name-container {
   position: relative;
+  background-color: var(--main-color);
+  border-radius: 10px;
 }
 
 .name-collapse {
   text-transform: capitalize;
-  background-color: var(--main-color);
   color: #ffff;
-  border-radius: 10px;
-  width: 100%;
   padding: 10px;
+  margin: 0;
 }
 
 .collapse-name-container img {
   position: absolute;
   width: 24px;
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
   top: 15%;
-  right: 0%;
+  right: 3%;
   cursor: pointer;
+}
+
+.details-collapse {
+  padding: 20px;
+  background-color: var(--grey);
+  border-radius: 0 0 10px 10px;
+  line-height: 143%;
+  text-align: justify;
 }
