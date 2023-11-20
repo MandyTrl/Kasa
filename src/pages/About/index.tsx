@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutBanner from '../../assets/about-banner.webp'
-import Banner from '../../components/Banner'
+import Banner from '../../components/ui/Banner'
 
 const About = () => {
   return (

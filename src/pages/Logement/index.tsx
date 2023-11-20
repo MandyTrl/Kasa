@@ -1,10 +1,10 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import type { LocationType } from '@/components/Card'
-import Banner from '../../components/Banner'
-import Slider from '../../components/ui/Slider'
 import Tag from '../../components/ui/Tag'
+import Slider from '../../components/ui/Slider'
 import Rating from '../../components/ui/Rating'
+import Collapse from '../../components/ui/Collapse'
 import Locations from '../../shared/locations.json'
 
 const Logement = () => {
@@ -19,7 +19,6 @@ const Logement = () => {
   ) : (
     <div className="main">
       <Slider images={location.pictures} />
-      {/* <Banner imgSrc={location?.pictures[0]} isLocation /> */}
 
       <div className="main-logement">
         <div className="location">
@@ -41,6 +40,11 @@ const Logement = () => {
           <div className="type">
             <Tag labels={location.tags} />
             <Rating rating={location.rating} />
+          </div>
+
+          <div className="details">
+            <Collapse section={location.description} sectionName="description" />
+            <Collapse section={location.equipments} sectionName="équipement" />
           </div>
         </div>
       </div>

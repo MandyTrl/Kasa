@@ -36,7 +36,7 @@ const Slider = ({ images }: SliderProps) => {
         <div>
           <img src={`${images[currentIndex]}`} alt="location details" className="slider-img" />
           <div className="pagination">
-            {currentIndex}/{images.length}
+            {currentIndex + 1}/{images.length}
           </div>
         </div>
       </div>

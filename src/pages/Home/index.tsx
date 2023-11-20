@@ -1,7 +1,7 @@
 import React from 'react'
 import HomeBanner from '../../assets/home-banner.webp'
 import Card, { type LocationType } from '../../components/Card'
-import Banner from '../../components/Banner'
+import Banner from '../../components/ui/Banner'
 import Locations from '../../shared/locations.json'
 
 export type dataProps = {

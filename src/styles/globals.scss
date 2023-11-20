@@ -310,7 +310,7 @@ a p:hover {
   padding: 3px 23px;
 }
 
-//CAROUSSEL
+//SLIDER
 .inner-slider {
   width: 1240px;
   height: 415px;
@@ -347,4 +347,35 @@ a p:hover {
   left: 50%;
   color: #ffff;
   font-size: 20px;
+}
+
+//COLLAPSE
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.collapse {
+  width: 582px;
+}
+
+.collapse-name-container {
+  position: relative;
+}
+
+.name-collapse {
+  text-transform: capitalize;
+  background-color: var(--main-color);
+  color: #ffff;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.collapse-name-container img {
+  position: absolute;
+  width: 24px;
+  transform: rotate(-90deg);
+  top: 15%;
+  right: 0%;
+  cursor: pointer;
 }
