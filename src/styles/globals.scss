@@ -392,9 +392,20 @@ a p:hover {
 }
 
 .details-collapse {
-  padding: 20px;
   background-color: var(--grey);
   border-radius: 0 0 10px 10px;
   line-height: 143%;
+  padding: 20px;
   text-align: justify;
+  overflow: hidden;
+  transition: max-height 0.6s ease-in-out;
+}
+
+.details-collapse-open {
+  max-height: fit-content;
+}
+
+.details-collapse-closed {
+  max-height: 0;
+  padding: 0;
 }
