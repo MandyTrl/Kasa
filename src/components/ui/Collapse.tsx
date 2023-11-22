@@ -11,7 +11,6 @@ type CollapseProps = {
 const Collapse = ({ section, sectionName }: CollapseProps) => {
   const handleDescription = typeof section === 'string'
   const [isOpen, setIsOpen] = useState<boolean>(false)
-  // tester la hauteur ET la hauteur max (pas d'impact sur le text) avec le translate de 0 à ?
 
   return (
     <div className="collapse">
@@ -22,11 +21,11 @@ const Collapse = ({ section, sectionName }: CollapseProps) => {
 
       {handleDescription ? (
         <div className={clsx(isOpen ? 'details-collapse-open' : 'details-collapse-closed', 'details-collapse')}>
-          {section}
+          <p className="inner-details">{section}</p>
         </div>
       ) : (
         <div className={clsx(isOpen ? 'details-collapse-open' : 'details-collapse-closed', 'details-collapse')}>
-          <ul>
+          <ul className="inner-details">
             {section.map((el) => {
               return <li key={el}>{el}</li>
             })}

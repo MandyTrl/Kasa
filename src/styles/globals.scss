@@ -362,7 +362,6 @@ a p:hover {
 
 .collapse ul {
   margin: 0;
-  padding-inline-start: 0;
 }
 
 .collapse li {
@@ -386,6 +385,7 @@ a p:hover {
   position: absolute;
   width: 24px;
   transform: rotate(90deg);
+  transition: transform 0.4 ease-in-out;
   top: 15%;
   right: 3%;
   cursor: pointer;
@@ -395,17 +395,20 @@ a p:hover {
   background-color: var(--grey);
   border-radius: 0 0 10px 10px;
   line-height: 143%;
-  padding: 20px;
   text-align: justify;
   overflow: hidden;
-  transition: max-height 0.6s ease-in-out;
+  transition: max-height 0.4s ease-in-out;
 }
 
 .details-collapse-open {
-  max-height: fit-content;
+  max-height: 1020px;
 }
 
 .details-collapse-closed {
   max-height: 0;
-  padding: 0;
+}
+
+.inner-details {
+  padding: 20px;
+  margin: 0;
 }
