@@ -137,21 +137,21 @@ a:hover {
 .banner {
   position: relative;
 
-  .banner__img {
+  &__img {
     width: 1240px;
     height: 223px;
     object-fit: cover;
     border-radius: 25px;
   }
 
-  .banner__location__img {
+  &__location__img {
     width: 1240px;
     height: 415px;
     object-fit: cover;
     border-radius: 25px;
   }
 
-  .banner__title {
+  &__title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -194,14 +194,14 @@ a:hover {
   cursor: pointer;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
 
-  .card__img {
+  &__img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
   }
 
-  .card__title {
+  &__title {
     z-index: 2;
     position: relative;
     width: 220px;
@@ -214,7 +214,7 @@ a:hover {
     overflow: hidden;
   }
 
-  .card__title:hover {
+  &__title:hover {
     transition: background-color 0.5s ease;
     background-color: $main-color;
   }
@@ -256,7 +256,7 @@ a:hover {
   align-items: center;
   margin-top: 30px;
 
-  .location__intro__reference {
+  &reference {
     font-size: 18px;
 
     h3 {
