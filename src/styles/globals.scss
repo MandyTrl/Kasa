@@ -1,7 +1,5 @@
-:root {
-  --main-color: #ff6060;
-  --grey: #f6f6f6;
-}
+$main-color: #ff6060;
+$grey: #f6f6f6;
 
 // REGULAR FONT //
 @font-face {
@@ -129,7 +127,7 @@ nav {
 }
 
 a {
-  color: var(--main-color);
+  color: $main-color;
   text-decoration: none;
 }
 a:hover {
@@ -177,7 +175,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: var(--grey);
+  background-color: $grey;
   border-radius: 25px;
   padding: 25px;
   margin-top: 43px;
@@ -217,7 +215,7 @@ a:hover {
 
     .card__title:hover {
       transition: background-color 0.5s ease;
-      background-color: var(--main-color);
+      background-color: $main-color;
     }
   }
 }
@@ -228,7 +226,7 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding-bottom: 149px;
-  color: var(--main-color);
+  color: $main-color;
 
   h3 {
     font-size: 288px;
@@ -248,7 +246,7 @@ a:hover {
 
 //LOCATION PAGE
 .location {
-  color: var(--main-color);
+  color: $main-color;
 
   .location__intro {
     display: flex;
@@ -301,7 +299,7 @@ a:hover {
         justify-content: center;
         align-items: center;
         color: #ffff;
-        background-color: var(--main-color);
+        background-color: $main-color;
         border-radius: 10px;
         text-align: center;
         margin-right: 10px;
@@ -362,7 +360,7 @@ a:hover {
 
   .collapse__name__container {
     position: relative;
-    background-color: var(--main-color);
+    background-color: $main-color;
     border-radius: 10px;
 
     .collapse__name {
@@ -384,7 +382,7 @@ a:hover {
   }
 
   .details__collapse {
-    background-color: var(--grey);
+    background-color: $grey;
     border-radius: 0 0 10px 10px;
     line-height: 143%;
     text-align: justify;
