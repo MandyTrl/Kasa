@@ -25,10 +25,10 @@ export type CardProps = {
 
 const Card = ({ location }: CardProps) => {
   return (
-    <Link to={`/logement/${location.id}`}>
+    <Link to={`/logement/${location.id}`} className="card__link">
       <div className="card">
-        <img src={location.cover} alt={location.title} className="card-img" />
-        <p>{location.title}</p>
+        <img src={location.cover} alt={location.title} className="card__img" />
+        <p className="card__title">{location.title}</p>
       </div>
     </Link>
   )

@@ -11,13 +11,13 @@ export type dataProps = {
 const Home = () => {
   return (
     <div className="main">
-      <div className="banner-container">
+      <div className="banner">
         <Banner imgSrc={HomeBanner} />
-        <p className="banner-title">
+        <p className="banner__title">
           Chez vous, partout <br></br>et ailleurs
         </p>
       </div>
-      <div className="locations">
+      <div className="card__layout">
         {Locations.map((location: LocationType) => {
           return <Card key={location.id} location={location} />
         })}

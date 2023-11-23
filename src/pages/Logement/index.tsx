@@ -20,16 +20,16 @@ const Logement = () => {
     <div className="main">
       <Slider images={location.pictures} />
 
-      <div className="main-logement">
+      <div className="location__layout">
         <div className="location">
-          <div className="intro">
-            <div className="location-reference">
+          <div className="location__intro">
+            <div className="location__intro__reference">
               <h3>{location.title}</h3>
               <p>{location.location}</p>
             </div>
 
-            <div className="host">
-              <div className="host-name">
+            <div className="location__host">
+              <div className="location__host__name">
                 <p>{firstname}</p>
                 <p>{lastname}</p>
               </div>
@@ -37,7 +37,7 @@ const Logement = () => {
             </div>
           </div>
 
-          <div className="type">
+          <div className="location__attributes">
             <Tag labels={location.tags} />
             <Rating rating={location.rating} />
           </div>

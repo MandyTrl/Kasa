@@ -23,19 +23,19 @@ const Slider = ({ images }: SliderProps) => {
 
   return (
     <div className="slider">
-      <div className="inner-slider">
-        <div className="arrow-group">
+      <div className="inner__slider">
+        <div className="inner__slider__arrow__group">
           <div onClick={goToPrevious}>
-            <img src={Previous} alt="go to previous image" className="left-arrow" />
+            <img src={Previous} alt="go to previous image" className="left__arrow" />
           </div>
           <div onClick={goToNext}>
-            <img src={Next} alt="got to next image" className="right-arrow" />
+            <img src={Next} alt="got to next image" className="right__arrow" />
           </div>
         </div>
 
         <div>
-          <img src={`${images[currentIndex]}`} alt="location details" className="slider-img" />
-          <div className="pagination">
+          <img src={`${images[currentIndex]}`} alt="location details" className="slider__img" />
+          <div className="slider__pagination">
             {currentIndex + 1}/{images.length}
           </div>
         </div>

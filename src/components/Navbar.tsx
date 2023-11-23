@@ -5,16 +5,18 @@ import logo from './../assets/logo.svg'
 const Navbar = () => {
   return (
     <header>
-      <img src={logo} alt="logo kasa" />
+      <nav>
+        <img src={logo} alt="logo kasa" className="navbar__logo" />
 
-      <ul>
-        <li>
-          <Link to="/">Accueil</Link>
-        </li>
-        <li>
-          <Link to="/about">A propos</Link>
-        </li>
-      </ul>
+        <ul>
+          <li className="nav__links">
+            <Link to="/">Accueil</Link>
+          </li>
+          <li className="nav__links">
+            <Link to="/about">A propos</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }

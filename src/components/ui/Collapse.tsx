@@ -14,18 +14,18 @@ const Collapse = ({ section, sectionName }: CollapseProps) => {
 
   return (
     <div className="collapse">
-      <div className="collapse-name-container">
-        <p className="name-collapse">{sectionName}</p>
+      <div className="collapse__name__container">
+        <p className="collapse__name">{sectionName}</p>
         <img src={isOpen ? Down : Up} alt="click to scroll down" onClick={() => setIsOpen(!isOpen)} />
       </div>
 
       {handleDescription ? (
-        <div className={clsx(isOpen ? 'details-collapse-open' : 'details-collapse-closed', 'details-collapse')}>
-          <p className="inner-details">{section}</p>
+        <div className={clsx(isOpen ? 'details__collapse-open' : 'details__collapse-closed', 'details__collapse')}>
+          <p className="inner__details__collapse">{section}</p>
         </div>
       ) : (
-        <div className={clsx(isOpen ? 'details-collapse-open' : 'details-collapse-closed', 'details-collapse')}>
-          <ul className="inner-details">
+        <div className={clsx(isOpen ? 'details__collapse-open' : 'details__collapse-closed', 'details__collapse')}>
+          <ul className="inner__details__collapse">
             {section.map((el) => {
               return <li key={el}>{el}</li>
             })}

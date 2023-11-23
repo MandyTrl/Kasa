@@ -6,7 +6,7 @@ type TagProps = {
 
 const Tag = ({ labels }: TagProps) => {
   return (
-    <div className="tags">
+    <div className="tags__layout">
       {labels?.map((title: string) => {
         return (
           <div className="tag" key={title}>
