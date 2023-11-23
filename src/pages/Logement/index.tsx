@@ -4,7 +4,7 @@ import type { LocationType } from '@/components/Card'
 import Tag from '../../components/ui/Tag'
 import Slider from '../../components/ui/Slider'
 import Rating from '../../components/ui/Rating'
-import Collapse from '../../components/ui/Collapse'
+import Collapse, { CollapseTypeEnum } from '../../components/ui/Collapse'
 import Locations from '../../shared/locations.json'
 
 const Logement = () => {
@@ -43,8 +43,20 @@ const Logement = () => {
           </div>
 
           <div className="location__details">
-            <Collapse section={location.description} sectionName="description" />
-            <Collapse section={location.equipments} sectionName="équipement" />
+            <div className="location__collapse__container">
+              <Collapse
+                typeOfSection={CollapseTypeEnum.DETAILS}
+                sectionContent={location.description}
+                sectionName="description"
+              />
+            </div>
+            <div className="location__collapse__container">
+              <Collapse
+                typeOfSection={CollapseTypeEnum.STUFF}
+                sectionContent={location.equipments}
+                sectionName="équipement"
+              />
+            </div>
           </div>
         </div>
       </div>

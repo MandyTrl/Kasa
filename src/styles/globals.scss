@@ -256,7 +256,7 @@ a:hover {
   align-items: center;
   margin-top: 30px;
 
-  &reference {
+  &__reference {
     font-size: 18px;
 
     h3 {
@@ -313,6 +313,9 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 31px;
+  .location__collapse__container {
+    width: 47%;
+  }
 }
 
 //SLIDER
@@ -356,33 +359,44 @@ a:hover {
 
 //COLLAPSE
 .collapse {
-  width: 582px;
+  width: 100%;
 
   .collapse__name__container {
+    z-index: 5;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: $main-color;
     border-radius: 10px;
+    height: 54px;
+    padding-right: 20px;
 
     .collapse__name {
       text-transform: capitalize;
+      font-weight: 500;
       color: #ffff;
-      padding: 10px;
+      padding-left: 10px;
       margin: 0;
+
+      &__about {
+        font-size: 24px;
+      }
     }
 
     img {
-      position: absolute;
       width: 24px;
       transform: rotate(90deg);
       transition: transform 0.4 ease-in-out;
-      top: 15%;
-      right: 3%;
       cursor: pointer;
     }
   }
 }
 
 .details__collapse {
+  position: relative;
+  padding-top: 20px;
+  bottom: 20px;
   background-color: $grey;
   border-radius: 0 0 10px 10px;
   line-height: 143%;
@@ -401,10 +415,22 @@ a:hover {
   .inner__details__collapse {
     padding: 20px;
     margin: 0;
-    margin: 0;
+
+    &__title::first-letter {
+      font-size: 20px;
+    }
+
+    &__content {
+      border-left: 1px solid #c1c1c1;
+      padding: 0 8px;
+    }
 
     li {
       list-style: none;
     }
   }
+}
+
+.about {
+  margin: 30px 0;
 }
