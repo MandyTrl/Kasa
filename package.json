@@ -45,6 +45,7 @@
   "author": "Mandy Thorel",
   "license": "MIT",
   "devDependencies": {
+    "@types/uuid": "^9.0.7",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.9.1",
     "eslint": "^8.0.1",
