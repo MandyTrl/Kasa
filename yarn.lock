@@ -7155,9 +7155,9 @@ postcss-logical@^5.0.4:
   resolved "https://registry.yarnpkg.com/postcss-logical/-/postcss-logical-5.0.4.tgz#ec75b1ee54421acc04d5921576b7d8db6b0e6f73"
   integrity sha512-RHXxplCeLh9VjinvMrZONq7im4wjWGlRJAqmAVLXyZaXwfDWP73/oq4NdIp+OZwhQUMj0zjqDfM5Fj7qby+B4g==
 
-postcss-media-minmax@^5.0.0:
+postcss-media-maxmax@^5.0.0:
   version "5.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-media-minmax/-/postcss-media-minmax-5.0.0.tgz#7140bddec173e2d6d657edbd8554a55794e2a5b5"
+  resolved "https://registry.yarnpkg.com/postcss-media-maxmax/-/postcss-media-maxmax-5.0.0.tgz#7140bddec173e2d6d657edbd8554a55794e2a5b5"
   integrity sha512-yDUvFf9QdFZTuCUg0g0uNSHVlJ5X1lSzDZjPSFaiCWvjgsvu8vEVxtahPrLMinIDEEGnx6cBe6iqdx5YWz08wQ==
 
 postcss-merge-longhand@^5.1.7:
@@ -7401,7 +7401,7 @@ postcss-preset-env@^7.0.1:
     postcss-initial "^4.0.1"
     postcss-lab-function "^4.2.1"
     postcss-logical "^5.0.4"
-    postcss-media-minmax "^5.0.0"
+    postcss-media-maxmax "^5.0.0"
     postcss-nesting "^10.2.0"
     postcss-opacity-percentage "^1.1.2"
     postcss-overflow-shorthand "^3.0.4"

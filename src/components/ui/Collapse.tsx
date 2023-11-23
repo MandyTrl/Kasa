@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Down from '../../assets/previous-arrow.svg'
-import Up from '../../assets/next-arrow.svg'
 import clsx from 'clsx'
+import Up from '../../assets/next-arrow.svg'
+import Down from '../../assets/previous-arrow.svg'
 
 type AboutSectionType = {
   name?: string
