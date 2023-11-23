@@ -42,7 +42,7 @@ const Logement = () => {
             <Rating rating={location.rating} />
           </div>
 
-          <div className="details">
+          <div className="location__details">
             <Collapse section={location.description} sectionName="description" />
             <Collapse section={location.equipments} sectionName="équipement" />
           </div>

@@ -183,40 +183,40 @@ a:hover {
   .card__link {
     text-decoration: none;
   }
+}
 
-  .card {
-    width: 340px;
-    height: 340px;
+.card {
+  width: 340px;
+  height: 340px;
+  border-radius: 10px;
+  margin: 25px;
+  color: #ffff;
+  cursor: pointer;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+  .card__img {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    margin: 25px;
-    color: #ffff;
-    cursor: pointer;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    object-fit: cover;
+  }
 
-    .card__img {
-      width: 100%;
-      height: 100%;
-      border-radius: 10px;
-      object-fit: cover;
-    }
+  .card__title {
+    z-index: 2;
+    position: relative;
+    width: 220px;
+    left: 20px;
+    bottom: 55px;
+    font-weight: 700;
+    padding-left: 4px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 
-    .card__title {
-      z-index: 2;
-      position: relative;
-      width: 220px;
-      left: 20px;
-      bottom: 55px;
-      font-weight: 700;
-      padding-left: 4px;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-
-    .card__title:hover {
-      transition: background-color 0.5s ease;
-      background-color: $main-color;
-    }
+  .card__title:hover {
+    transition: background-color 0.5s ease;
+    background-color: $main-color;
   }
 }
 
@@ -247,66 +247,72 @@ a:hover {
 //LOCATION PAGE
 .location {
   color: $main-color;
+}
 
-  .location__intro {
+.location__intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+
+  .location__intro__reference {
+    font-size: 18px;
+
+    h3 {
+      font-size: 36px;
+      font-weight: 500;
+      line-height: 0px;
+    }
+  }
+}
+
+.location__host {
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  img {
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    padding-left: 10px;
+  }
+
+  p {
+    line-height: 8px;
+  }
+}
+
+.location__attributes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  //TAGS
+  .tags__layout {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 30px;
 
-    .location__intro__reference {
-      font-size: 18px;
-
-      h3 {
-        font-size: 36px;
-        font-weight: 500;
-        line-height: 0px;
-      }
-    }
-  }
-
-  .location__host {
-    display: flex;
-    align-items: center;
-    text-align: right;
-
-    img {
-      width: 64px;
-      height: 64px;
-      border-radius: 100%;
-      padding-left: 10px;
-    }
-
-    p {
-      line-height: 8px;
-    }
-  }
-
-  .location__attributes {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-
-    //TAGS
-    .tags__layout {
+    .tag {
+      width: fit-content;
       display: flex;
-      flex-direction: row;
-
-      .tag {
-        width: fit-content;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #ffff;
-        background-color: $main-color;
-        border-radius: 10px;
-        text-align: center;
-        margin-right: 10px;
-        padding: 3px 23px;
-      }
+      justify-content: center;
+      align-items: center;
+      color: #ffff;
+      background-color: $main-color;
+      border-radius: 10px;
+      text-align: center;
+      margin-right: 10px;
+      padding: 3px 23px;
     }
   }
+}
+
+.location__details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 31px;
 }
 
 //SLIDER
@@ -349,12 +355,6 @@ a:hover {
 }
 
 //COLLAPSE
-.details {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 31px;
-}
-
 .collapse {
   width: 582px;
 
@@ -380,31 +380,31 @@ a:hover {
       cursor: pointer;
     }
   }
+}
 
-  .details__collapse {
-    background-color: $grey;
-    border-radius: 0 0 10px 10px;
-    line-height: 143%;
-    text-align: justify;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
+.details__collapse {
+  background-color: $grey;
+  border-radius: 0 0 10px 10px;
+  line-height: 143%;
+  text-align: justify;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
 
-    .inner__details__collapse {
-      padding: 20px;
-      margin: 0;
-      margin: 0;
-
-      li {
-        list-style: none;
-      }
-    }
-  }
-
-  .details__collapse-open {
+  &-open {
     max-height: 1020px;
   }
 
-  .details__collapse-closed {
+  &-closed {
     max-height: 0;
+  }
+
+  .inner__details__collapse {
+    padding: 20px;
+    margin: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+    }
   }
 }
