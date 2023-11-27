@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Previous from '../../assets/previous-arrow.svg'
 import Next from '../../assets/next-arrow.svg'
 
@@ -20,6 +20,21 @@ const Slider = ({ images }: SliderProps) => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1
     setCurrentIndex(newIndex)
   }
+
+  function handleKeyDown(e: KeyboardEvent) {
+    if (e.key === 'ArrowLeft') {
+      goToPrevious()
+    } else if (e.key === 'ArrowRight') {
+      goToNext()
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown)
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown)
+    }
+  }, [currentIndex])
 
   return (
     <div className="slider">
