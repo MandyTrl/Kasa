@@ -11,11 +11,11 @@ const Rating = ({ rating }: RatingProps) => {
   const numberOfInactiveStars = 5 - rating
 
   const activeStars = Array.from({ length: rating }, () => (
-    <img src={ActiveStar} alt="" aria-hidden="true" key={uuidv4()} />
+    <img src={ActiveStar} alt="" aria-hidden="true" key={uuidv4()} className="star" />
   ))
 
   const inactiveStars = Array.from({ length: numberOfInactiveStars }, () => (
-    <img src={InactiveStar} alt="" aria-hidden="true" key={uuidv4()} />
+    <img src={InactiveStar} alt="" aria-hidden="true" key={uuidv4()} className="star" />
   ))
 
   return (

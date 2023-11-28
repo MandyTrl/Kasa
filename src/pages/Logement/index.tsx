@@ -17,50 +17,50 @@ const Logement = () => {
   return location === undefined ? (
     <></>
   ) : (
-    <div className="main">
+    <main>
       <Slider images={location.pictures} />
 
       <div className="location__layout">
-        <div className="location">
-          <div className="location__intro">
-            <div className="location__intro__reference">
-              <h3>{location.title}</h3>
-              <p>{location.location}</p>
+        <div className="location__intro">
+          <div className="location__intro__reference">
+            <h3>{location.title}</h3>
+            <p>{location.location}</p>
+            <div className="tags__layout">
+              <Tag labels={location.tags} />
             </div>
+          </div>
 
-            <div className="location__host">
+          <div className="location__host">
+            <div>
               <div className="location__host__name">
                 <p>{firstname}</p>
                 <p>{lastname}</p>
               </div>
-              <img src={location.host.picture} alt="picture of host" />
+              <img src={location.host.picture} alt="picture of host" className="location__host__img" />
             </div>
-          </div>
 
-          <div className="location__attributes">
-            <Tag labels={location.tags} />
             <Rating rating={location.rating} />
           </div>
+        </div>
 
-          <div className="location__details">
-            <div className="location__collapse__container">
-              <Collapse
-                typeOfSection={CollapseTypeEnum.DETAILS}
-                sectionContent={location.description}
-                sectionName="description"
-              />
-            </div>
-            <div className="location__collapse__container">
-              <Collapse
-                typeOfSection={CollapseTypeEnum.STUFF}
-                sectionContent={location.equipments}
-                sectionName="équipement"
-              />
-            </div>
+        <div className="location__details">
+          <div className="location__collapse__container">
+            <Collapse
+              typeOfSection={CollapseTypeEnum.DETAILS}
+              sectionContent={location.description}
+              sectionName="description"
+            />
+          </div>
+          <div className="location__collapse__container">
+            <Collapse
+              typeOfSection={CollapseTypeEnum.STUFF}
+              sectionContent={location.equipments}
+              sectionName="équipement"
+            />
           </div>
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

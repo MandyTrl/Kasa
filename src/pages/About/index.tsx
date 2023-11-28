@@ -6,7 +6,7 @@ import AboutDatas from '../../shared/about.json'
 
 const About = () => {
   return (
-    <div className="main">
+    <main>
       <Banner imgSrc={AboutBanner} />
 
       {AboutDatas.map((el) => (
@@ -14,7 +14,7 @@ const About = () => {
           <Collapse sectionContent={el.sections} typeOfSection={CollapseTypeEnum.ABOUT} sectionName={el.title} />
         </div>
       ))}
-    </div>
+    </main>
   )
 }
 

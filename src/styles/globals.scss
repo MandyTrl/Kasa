@@ -21,23 +21,8 @@
 }
 @font-face {
   font-family: Montserrat;
-  src: url('./../fonts/Montserrat-ExtraBold.ttf');
-  font-weight: 800;
-}
-@font-face {
-  font-family: Montserrat;
   src: url('./../fonts/Montserrat-Light.ttf');
   font-weight: 300;
-}
-@font-face {
-  font-family: Montserrat;
-  src: url('./../fonts/Montserrat-ExtraLight.ttf');
-  font-weight: 200;
-}
-@font-face {
-  font-family: Montserrat;
-  src: url('./../fonts/Montserrat-Thin.ttf');
-  font-weight: 100;
 }
 // ITALIC FONT //
 @font-face {
@@ -66,27 +51,9 @@
 }
 @font-face {
   font-family: Montserrat;
-  src: url('./../fonts/Montserrat-ExtraBoldItalic.ttf');
-  font-style: italic;
-  font-weight: 800;
-}
-@font-face {
-  font-family: Montserrat;
   src: url('./../fonts/Montserrat-LightItalic.ttf');
   font-style: italic;
   font-weight: 300;
-}
-@font-face {
-  font-family: Montserrat;
-  src: url('./../fonts/Montserrat-ExtraLightItalic.ttf');
-  font-style: italic;
-  font-weight: 200;
-}
-@font-face {
-  font-family: Montserrat;
-  src: url('./../fonts/Montserrat-ThinItalic.ttf');
-  font-style: italic;
-  font-weight: 100;
 }
 
 $main-color: #ff6060;
@@ -126,23 +93,25 @@ footer {
   }
 }
 
-nav {
+header {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   max-width: 1240px;
   margin: 50px auto;
+
   @include media-max('phone') {
-    display: flex;
     justify-content: center;
     align-items: center;
     max-width: 335px;
     margin-top: 20px;
+  }
 
-    img {
-      width: 145px;
-    }
+  img {
+    width: 120px;
+  }
 
+  nav {
     ul {
       margin: 0;
     }
@@ -181,7 +150,7 @@ a:hover {
   }
 
   &__img {
-    width: 1240px;
+    max-width: 100%;
     height: 223px;
     object-fit: cover;
     border-radius: 25px;
@@ -189,13 +158,6 @@ a:hover {
       width: 335px;
       height: 111px;
     }
-  }
-
-  &__location__img {
-    width: 1240px;
-    height: 415px;
-    object-fit: cover;
-    border-radius: 25px;
   }
 
   &__title {
@@ -215,7 +177,7 @@ a:hover {
   }
 }
 
-.main {
+main {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto 50px auto;
@@ -294,7 +256,7 @@ a:hover {
 
   h3 {
     font-size: 288px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 0px;
   }
 
@@ -309,7 +271,7 @@ a:hover {
 }
 
 //LOCATION PAGE
-.location {
+.location__layout {
   color: $main-color;
 }
 
@@ -319,6 +281,10 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
+  @include media-max('phone') {
+    flex-direction: column;
+    margin-top: 15px;
+  }
 
   &__reference {
     font-size: 18px;
@@ -327,6 +293,9 @@ a:hover {
       font-size: 36px;
       font-weight: 500;
       line-height: 0px;
+      @include media-max('phone') {
+        font-size: 18px;
+      }
     }
   }
 }
@@ -335,8 +304,12 @@ a:hover {
   display: flex;
   align-items: center;
   text-align: right;
+  @include media-max('phone') {
+    flex-direction: row;
+    align-items: space-between;
+  }
 
-  img {
+  &__img {
     width: 64px;
     height: 64px;
     border-radius: 100%;
@@ -352,33 +325,40 @@ a:hover {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
-
-  //TAGS
-  .tags__layout {
-    display: flex;
-    flex-direction: row;
-
-    .tag {
-      width: fit-content;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #ffff;
-      background-color: $main-color;
-      border-radius: 10px;
-      text-align: center;
-      margin-right: 10px;
-      padding: 3px 23px;
-    }
-  }
 }
 
 .location__details {
   display: flex;
   justify-content: space-between;
   margin-top: 31px;
+  @include media-max('phone') {
+    flex-direction: column;
+  }
+
   .location__collapse__container {
     width: 47%;
+    @include media-max('phone') {
+      width: 100%;
+    }
+  }
+}
+
+//TAGS
+.tags__layout {
+  display: flex;
+  flex-direction: row;
+
+  .tag {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    background-color: $main-color;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 3px 23px;
   }
 }
 
@@ -387,12 +367,20 @@ a:hover {
   width: 1240px;
   height: 415px;
   position: relative;
+  @include media-max('phone') {
+    width: 335px;
+    height: 255px;
+  }
 
   .slider__img {
     width: 1240px;
     height: 415px;
     object-fit: cover;
     border-radius: 25px;
+    @include media-max('phone') {
+      width: 335px;
+      height: 255px;
+    }
   }
 
   .slider__pagination {
@@ -401,6 +389,9 @@ a:hover {
     left: 50%;
     color: #ffff;
     font-size: 20px;
+    @include media-max('phone') {
+      display: none;
+    }
   }
 
   .right__arrow,
@@ -410,6 +401,9 @@ a:hover {
     transform: translate(0, -50%);
     cursor: pointer;
     width: 80px;
+    @include media-max('phone') {
+      width: 24px;
+    }
   }
 
   .right__arrow {
@@ -497,4 +491,10 @@ a:hover {
 
 .about {
   margin: 30px 0;
+}
+
+.star {
+  @include media-max('phone') {
+    width: 18px;
+  }
 }
