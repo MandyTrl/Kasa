@@ -24,14 +24,14 @@ const Logement = () => {
         <div className="location__intro">
           <div className="location__intro__reference">
             <h3>{location.title}</h3>
-            <p>{location.location}</p>
+            <p className="location__intro__localisation">{location.location}</p>
             <div className="tags__layout">
               <Tag labels={location.tags} />
             </div>
           </div>
 
-          <div className="location__host">
-            <div>
+          <div className="location__host__layout">
+            <div className="location__host">
               <div className="location__host__name">
                 <p>{firstname}</p>
                 <p>{lastname}</p>

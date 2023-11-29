@@ -180,9 +180,9 @@ a:hover {
 main {
   width: 100%;
   max-width: 1240px;
-  margin: 0 auto 50px auto;
+  padding: 0 auto 50px auto;
   @include media-max('phone') {
-    margin: 20px 20px 0 20px;
+    padding: 20px 20px 0 20px;
   }
 }
 
@@ -279,11 +279,19 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   margin-top: 30px;
   @include media-max('phone') {
     flex-direction: column;
     margin-top: 15px;
+  }
+
+  &__localisation {
+    line-height: 0;
+    padding-bottom: 20px;
+    @include media-max('phone') {
+      line-height: 100%;
+      padding-bottom: 0;
+    }
   }
 
   &__reference {
@@ -300,18 +308,28 @@ main {
   }
 }
 
+.location__host__layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  @include media-max('phone') {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+}
+
 .location__host {
   display: flex;
   align-items: center;
   text-align: right;
-  @include media-max('phone') {
-    flex-direction: row;
-    align-items: space-between;
-  }
 
   &__img {
-    width: 64px;
-    height: 64px;
+    width: 70px;
+    height: 70px;
     border-radius: 100%;
     padding-left: 10px;
   }
@@ -363,6 +381,10 @@ main {
 }
 
 //SLIDER
+.slider {
+  width: 355px;
+}
+
 .inner__slider {
   width: 1240px;
   height: 415px;
