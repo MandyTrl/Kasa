@@ -8,6 +8,7 @@ type SliderProps = {
 
 const Slider = ({ images }: SliderProps) => {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const moreThanOneImg = images.length > 1
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0
@@ -39,20 +40,24 @@ const Slider = ({ images }: SliderProps) => {
   return (
     <div className="slider">
       <div className="inner__slider">
-        <div className="inner__slider__arrow__group">
-          <div onClick={goToPrevious}>
-            <img src={Previous} alt="go to previous image" className="left__arrow" />
+        {moreThanOneImg && (
+          <div className="inner__slider__arrow__group">
+            <div onClick={goToPrevious}>
+              <img src={Previous} alt="go to previous image" className="left__arrow" />
+            </div>
+            <div onClick={goToNext}>
+              <img src={Next} alt="got to next image" className="right__arrow" />
+            </div>
           </div>
-          <div onClick={goToNext}>
-            <img src={Next} alt="got to next image" className="right__arrow" />
-          </div>
-        </div>
+        )}
 
         <div>
           <img src={`${images[currentIndex]}`} alt="location details" className="slider__img" />
-          <div className="slider__pagination">
-            {currentIndex + 1}/{images.length}
-          </div>
+          {moreThanOneImg && (
+            <div className="slider__pagination">
+              {currentIndex + 1}/{images.length}
+            </div>
+          )}
         </div>
       </div>
     </div>
