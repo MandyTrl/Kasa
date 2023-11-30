@@ -65,9 +65,7 @@ const Collapse = ({ sectionName, sectionContent, typeOfSection }: CollapseProps)
   return (
     <div className="collapse">
       <div className="collapse__name__container">
-        <p className={clsx(typeOfSection === CollapseTypeEnum.ABOUT && 'collapse__name__about', 'collapse__name')}>
-          {sectionName}
-        </p>
+        <p className="collapse__name">{sectionName}</p>
         <img src={isOpen ? Down : Up} alt="click to scroll down" onClick={() => setIsOpen(!isOpen)} />
       </div>
 

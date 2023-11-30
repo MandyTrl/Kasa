@@ -72,8 +72,11 @@ $breakpoints: (
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: 'Montserrat';
+  @include media-max('phone') {
+    font-size: 12px;
+  }
 }
 
 footer {
@@ -84,6 +87,9 @@ footer {
   margin: auto 0;
   background-color: #000;
   color: #ffff;
+  @include media-max('phone') {
+    margin-top: 10px;
+  }
 
   .footer__logo {
     width: 122px;
@@ -99,12 +105,11 @@ header {
   align-items: flex-end;
   max-width: 1240px;
   margin: 50px auto;
-
   @include media-max('phone') {
     justify-content: center;
     align-items: center;
     max-width: 335px;
-    margin-top: 20px;
+    margin: 27px auto;
   }
 
   img {
@@ -150,7 +155,7 @@ a:hover {
   }
 
   &__img {
-    max-width: 100%;
+    width: 100%;
     height: 223px;
     object-fit: cover;
     border-radius: 25px;
@@ -172,7 +177,7 @@ a:hover {
     text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
     @include media-max('phone') {
       font-size: 18px;
-      transform: translate(-20%, -90%);
+      transform: translate(-20%, -80%);
     }
   }
 }
@@ -180,9 +185,11 @@ a:hover {
 main {
   width: 100%;
   max-width: 1240px;
-  padding: 0 auto 50px auto;
+  margin: 0 auto 50px auto;
   @include media-max('phone') {
-    padding: 20px 20px 0 20px;
+    max-width: 335px;
+
+    margin: 20px auto auto 20px;
   }
 }
 
@@ -195,7 +202,6 @@ main {
   border-radius: 25px;
   padding: 25px;
   margin-top: 43px;
-
   @include media-max('phone') {
     background-color: #ffff;
     padding: 0;
@@ -238,6 +244,9 @@ main {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    @include media-max('phone') {
+      font-size: 16px;
+    }
   }
 
   &__title:hover {
@@ -282,7 +291,7 @@ main {
   margin-top: 30px;
   @include media-max('phone') {
     flex-direction: column;
-    margin-top: 15px;
+    margin: 15px 5px 0 5px;
   }
 
   &__localisation {
@@ -291,6 +300,7 @@ main {
     @include media-max('phone') {
       line-height: 100%;
       padding-bottom: 0;
+      font-size: 14px;
     }
   }
 
@@ -303,6 +313,8 @@ main {
       line-height: 0px;
       @include media-max('phone') {
         font-size: 18px;
+        line-height: 135%;
+        margin: -1px 0 -5px 0;
       }
     }
   }
@@ -312,13 +324,12 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   @include media-max('phone') {
-    display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    margin-top: 16px;
+    margin: 16px 0;
   }
 }
 
@@ -332,10 +343,17 @@ main {
     height: 70px;
     border-radius: 100%;
     padding-left: 10px;
+    @include media-max('phone') {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   p {
     line-height: 8px;
+    @include media-max('phone') {
+      line-height: 4px;
+    }
   }
 }
 
@@ -351,6 +369,7 @@ main {
   margin-top: 31px;
   @include media-max('phone') {
     flex-direction: column;
+    margin-top: 0;
   }
 
   .location__collapse__container {
@@ -365,6 +384,10 @@ main {
 .tags__layout {
   display: flex;
   flex-direction: row;
+  @include media-max('phone') {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
 
   .tag {
     width: fit-content;
@@ -377,12 +400,19 @@ main {
     text-align: center;
     margin-right: 10px;
     padding: 3px 23px;
+    @include media-max('phone') {
+      font-size: 10px;
+      font-weight: 500;
+      height: 18px;
+      // margin-right: 0;
+      // margin: auto 5px;
+    }
   }
 }
 
 //SLIDER
 .slider {
-  width: 355px;
+  width: 335px;
 }
 
 .inner__slider {
@@ -402,6 +432,7 @@ main {
     @include media-max('phone') {
       width: 335px;
       height: 255px;
+      border-radius: 10px;
     }
   }
 
@@ -439,8 +470,6 @@ main {
 
 //COLLAPSE
 .collapse {
-  width: 100%;
-
   .collapse__name__container {
     z-index: 5;
     position: relative;
@@ -450,7 +479,11 @@ main {
     background-color: $main-color;
     border-radius: 10px;
     height: 54px;
-    padding-right: 20px;
+    padding-right: 15px;
+    @include media-max('phone') {
+      height: 35px;
+      font-size: 14px;
+    }
 
     .collapse__name {
       text-transform: capitalize;
@@ -498,11 +531,17 @@ main {
 
     &__title::first-letter {
       font-size: 20px;
+      @include media-max('phone') {
+        font-size: 14px;
+      }
     }
 
     &__content {
       border-left: 1px solid #c1c1c1;
       padding: 0 8px;
+      @include media-max('phone') {
+        padding: 0 6px;
+      }
     }
 
     li {
@@ -513,6 +552,14 @@ main {
 
 .about {
   margin: 30px 0;
+  @include media-max('phone') {
+    margin: 0;
+  }
+}
+.about:first-of-type {
+  @include media-max('phone') {
+    margin-top: 19px;
+  }
 }
 
 .star {
