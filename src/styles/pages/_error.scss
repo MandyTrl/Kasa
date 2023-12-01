@@ -1,0 +1,42 @@
+@use '../utils/commons' as *;
+
+.main__error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $main-color;
+  font-size: 96px;
+  margin: 113px auto;
+  @include media-min('desktop') {
+    margin-bottom: 149px;
+  }
+
+  h3 {
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 0px;
+    @include media-min('desktop') {
+      font-size: 288px;
+    }
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 113px;
+    @include media-min('desktop') {
+      font-size: 36px;
+      margin-top: 0;
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    font-size: 14px;
+    margin: 113px auto;
+    @include media-min('desktop') {
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,104 @@
+@use '../utils/commons' as *;
+
+.location__layout {
+  color: $main-color;
+}
+
+.location__intro {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 15px 5px 0 5px;
+  @include media-min('desktop') {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  &__localisation {
+    line-height: 100%;
+    font-size: 14px;
+    @include media-min('desktop') {
+      padding-bottom: 0;
+      line-height: 0;
+      padding-bottom: 20px;
+      font-size: 18px;
+    }
+  }
+
+  &__reference {
+    font-size: 18px;
+
+    h3 {
+      font-size: 18px;
+      line-height: 135%;
+      margin: -1px 0 -5px 0;
+      font-weight: 400;
+      @include media-min('desktop') {
+        font-size: 36px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.location__host__layout {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0;
+  @include media-min('desktop') {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0;
+  }
+}
+
+.location__host {
+  display: flex;
+  align-items: center;
+  text-align: right;
+
+  &__img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-left: 10px;
+    @include media-min('desktop') {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  p {
+    line-height: 4px;
+    @include media-min('desktop') {
+      line-height: 8px;
+    }
+  }
+}
+
+.location__attributes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.location__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include media-min('desktop') {
+    margin-top: 31px;
+    flex-direction: row;
+  }
+
+  .location__collapse__container {
+    width: 100%;
+    @include media-min('desktop') {
+      width: 47%;
+    }
+  }
+}

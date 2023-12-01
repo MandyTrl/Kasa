@@ -1,0 +1,59 @@
+@use '../utils/commons' as *;
+
+.slider {
+  width: 335px;
+}
+
+.inner__slider {
+  position: relative;
+  width: 335px;
+  height: 255px;
+  @include media-min('desktop') {
+    width: 1240px;
+    height: 415px;
+  }
+
+  .slider__img {
+    object-fit: cover;
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    @include media-min('desktop') {
+      width: 1240px;
+      height: 415px;
+      border-radius: 25px;
+    }
+  }
+
+  .slider__pagination {
+    display: none;
+    @include media-min('desktop') {
+      display: inherit;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      color: #ffff;
+      font-size: 20px;
+    }
+  }
+
+  .right__arrow,
+  .left__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    width: 24px;
+    @include media-min('desktop') {
+      width: 80px;
+    }
+  }
+
+  .right__arrow {
+    right: 35px;
+  }
+
+  .left__arrow {
+    left: 35px;
+  }
+}

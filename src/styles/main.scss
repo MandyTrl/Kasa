@@ -1,0 +1,125 @@
+@use 'fonts/fonts';
+@use 'utils/commons' as *;
+@use 'layout/header';
+@use 'layout/footer';
+@use 'pages/error';
+@use 'pages/location';
+@use 'components/card';
+@use 'components/slider';
+@use 'components/collapse';
+
+body {
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  @include media-min('desktop') {
+    font-size: 18px;
+  }
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  &__img {
+    width: 100%;
+    width: 335px;
+    height: 111px;
+    object-fit: cover;
+    border-radius: 25px;
+    @include media-min('desktop') {
+      height: 223px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: right;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 18px;
+    transform: translate(-20%, -80%);
+    text-shadow: 3px 4px 7px rgba(81, 67, 21, 0.8);
+    @include media-min('desktop') {
+      font-size: 48px;
+      transform: translate(25%, -90%);
+    }
+  }
+}
+
+main {
+  width: 100%;
+  max-width: 335px;
+  margin: 20px auto;
+  @include media-min('desktop') {
+    max-width: 1240px;
+    margin: 0 auto 50px auto;
+  }
+}
+
+//TAGS
+.tags__layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 12px;
+  @include media-min('desktop') {
+    flex-direction: row;
+    margin-top: 0px;
+  }
+
+  .tag {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    background-color: $main-color;
+    border-radius: 10px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 3px 23px;
+    font-size: 10px;
+    font-weight: 500;
+    height: 18px;
+    @include media-min('desktop') {
+      height: 25px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
+
+//PAGE ABOUT
+.about {
+  margin: 0;
+  @include media-min('desktop') {
+    margin: 30px 0;
+  }
+}
+.about:first-of-type {
+  margin-top: 19px;
+  @include media-min('desktop') {
+    margin-top: 30px;
+  }
+}
+
+//RATING
+.star {
+  width: 18px;
+  @include media-min('desktop') {
+    width: 36px;
+  }
+}

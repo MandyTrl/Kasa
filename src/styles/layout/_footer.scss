@@ -1,0 +1,17 @@
+footer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin: auto 0;
+  background-color: #000;
+  color: #ffff;
+
+  .footer__logo {
+    width: 122px;
+    fill: #ffff;
+    padding-top: 69px;
+    padding-bottom: 29px;
+  }
+}

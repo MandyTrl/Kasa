@@ -1,0 +1,83 @@
+@use '../utils/commons' as *;
+
+.collapse {
+  .collapse__name__container {
+    z-index: 5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $main-color;
+    border-radius: 10px;
+    height: 35px;
+    font-size: 14px;
+    padding-right: 15px;
+    @include media-min('desktop') {
+      height: 54px;
+      font-size: 18px;
+    }
+
+    .collapse__name {
+      text-transform: capitalize;
+      font-weight: 500;
+      color: #ffff;
+      padding-left: 10px;
+      margin: 0;
+
+      &__about {
+        font-size: 24px;
+      }
+    }
+
+    img {
+      width: 24px;
+      transform: rotate(90deg);
+      transition: transform 0.4 ease-in-out;
+      cursor: pointer;
+    }
+  }
+}
+
+.details__collapse {
+  position: relative;
+  padding-top: 20px;
+  bottom: 20px;
+  background-color: $beige;
+  border-radius: 0 0 10px 10px;
+  line-height: 143%;
+  text-align: justify;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+
+  &-open {
+    max-height: 1020px;
+  }
+
+  &-closed {
+    max-height: 0;
+  }
+
+  .inner__details__collapse {
+    padding: 20px;
+    margin: 0;
+
+    &__title::first-letter {
+      font-size: 14px;
+      @include media-min('desktop') {
+        font-size: 20px;
+      }
+    }
+
+    &__content {
+      border-left: 1px solid #c1c1c1;
+      padding: 0 6px;
+      @include media-min('desktop') {
+        padding: 0 8px;
+      }
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+}
