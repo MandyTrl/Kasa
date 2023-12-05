@@ -6,7 +6,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Error from './pages/Error/Error'
+import Error from './pages/Error'
 import Logement from './pages/Logement'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(

@@ -1,5 +1,5 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
 import type { LocationType } from '@/components/Card'
 import Tag from '../../components/ui/Tag'
 import Slider from '../../components/ui/Slider'
@@ -9,10 +9,17 @@ import Locations from '../../shared/locations.json'
 
 const Logement = () => {
   const { id } = useParams()
+  const navigate = useNavigate()
   const location: LocationType | undefined = Locations.find((el: LocationType) => el.id === id)
   const host = location != null ? location.host.name.split(' ') : ''
   const firstname = host[0]
   const lastname = host[1]
+
+  useEffect(() => {
+    if (location === undefined) {
+      navigate('/error')
+    }
+  }, [id])
 
   return location === undefined ? (
     <></>
