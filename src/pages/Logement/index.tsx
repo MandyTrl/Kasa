@@ -8,9 +8,9 @@ import Collapse, { CollapseTypeEnum } from '../../components/ui/Collapse'
 import Locations from '../../shared/locations.json'
 
 const Logement = () => {
-  const { id } = useParams()
+  const { idParams } = useParams()
   const navigate = useNavigate()
-  const location: LocationType | undefined = Locations.find((el: LocationType) => el.id === id)
+  const location: LocationType | undefined = Locations.find((location: LocationType) => location.id === idParams)
   const host = location != null ? location.host.name.split(' ') : ''
   const firstname = host[0]
   const lastname = host[1]
@@ -19,7 +19,7 @@ const Logement = () => {
     if (location === undefined) {
       navigate('/error')
     }
-  }, [id])
+  }, [idParams])
 
   return location === undefined ? (
     <></>

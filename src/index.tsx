@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './styles/main.scss'
 import Home from './pages/Home'
+import Error from './pages/Error'
 import About from './pages/About'
+import Logement from './pages/Logement'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import Error from './pages/Error'
-import Logement from './pages/Logement'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -16,7 +16,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/logement/:id" element={<Logement />} />
+        <Route path="/logement/:idParams" element={<Logement />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />

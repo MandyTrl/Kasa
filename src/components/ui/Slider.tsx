@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Previous from '../../assets/previous-arrow.svg'
 import Next from '../../assets/next-arrow.svg'
+import Previous from '../../assets/previous-arrow.svg'
 
 type SliderProps = {
   images: string[]

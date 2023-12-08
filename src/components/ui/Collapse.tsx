@@ -26,34 +26,26 @@ const Collapse = ({ sectionName, sectionContent, typeOfSection }: CollapseProps)
   const renderSectionContent = () => {
     switch (typeOfSection) {
       case CollapseTypeEnum.DETAILS:
-        return (
-          <div className={clsx(isOpen ? 'details__collapse-open' : 'details__collapse-closed', 'details__collapse')}>
-            <p className="inner__details__collapse">{sectionContent as string}</p>
-          </div>
-        )
+        return <p className="inner__details__collapse">{sectionContent as string}</p>
 
       case CollapseTypeEnum.STUFF:
         return (
-          <div className={clsx(isOpen ? 'details__collapse-open' : 'details__collapse-closed', 'details__collapse')}>
-            <ul className="inner__details__collapse">
-              {(sectionContent as string[]).map((el, index) => (
-                <li key={index}>{el}</li>
-              ))}
-            </ul>
-          </div>
+          <ul className="inner__details__collapse">
+            {(sectionContent as string[]).map((el, index) => (
+              <li key={index}>{el}</li>
+            ))}
+          </ul>
         )
 
       case CollapseTypeEnum.ABOUT:
         return (
-          <div className={clsx(isOpen ? 'details__collapse-open' : 'details__collapse-closed', 'details__collapse')}>
-            <div className="inner__details__collapse">
-              {(sectionContent as AboutSectionType[]).map((el: AboutSectionType, index: number) => (
-                <div key={index}>
-                  {el.name != null && <p className="inner__details__collapse__title">{el.name}</p>}
-                  <p className={el.name != null ? 'inner__details__collapse__content' : ''}>{el.content}</p>
-                </div>
-              ))}
-            </div>
+          <div className="inner__details__collapse">
+            {(sectionContent as AboutSectionType[]).map((el: AboutSectionType, index: number) => (
+              <div key={index}>
+                {el.name != null && <p className="inner__details__collapse__title">{el.name}</p>}
+                <p className={el.name != null ? 'inner__details__collapse__content' : ''}>{el.content}</p>
+              </div>
+            ))}
           </div>
         )
 
@@ -69,7 +61,9 @@ const Collapse = ({ sectionName, sectionContent, typeOfSection }: CollapseProps)
         <img src={isOpen ? Down : Up} alt="click to scroll down" onClick={() => setIsOpen(!isOpen)} />
       </div>
 
-      {renderSectionContent()}
+      <div className={clsx(isOpen ? 'details__collapse-open' : 'details__collapse-closed', 'details__collapse')}>
+        {renderSectionContent()}
+      </div>
     </div>
   )
 }
