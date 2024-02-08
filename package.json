@@ -6,13 +6,10 @@
     "@types/node": "^16.7.13",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "clsx": "^2.0.0",
     "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
-    "sass": "^1.69.5",
     "typescript": "*"
   },
   "scripts": {
@@ -45,9 +42,7 @@
   "author": "Mandy Thorel",
   "license": "MIT",
   "devDependencies": {
-    "@types/uuid": "^9.0.7",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
-    "@typescript-eslint/parser": "^6.9.1",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^39.1.1",
     "eslint-plugin-import": "^2.25.2",
