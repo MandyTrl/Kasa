@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.62569a6d.css",
+    "main.js": "/static/js/main.d59d3587.js",
+    "static/media/about-banner.webp": "/static/media/about-banner.7d8a4016b5731914aef8.webp",
+    "static/media/home-banner.webp": "/static/media/home-banner.81394cebd6e74b1af317.webp",
+    "static/media/Montserrat-BoldItalic.ttf": "/static/media/Montserrat-BoldItalic.a169c71c1eb466896fe1.ttf",
+    "static/media/Montserrat-SemiBoldItalic.ttf": "/static/media/Montserrat-SemiBoldItalic.60907ef6dc10bb4e826a.ttf",
+    "static/media/Montserrat-LightItalic.ttf": "/static/media/Montserrat-LightItalic.ac3843da62f0afac7929.ttf",
+    "static/media/Montserrat-MediumItalic.ttf": "/static/media/Montserrat-MediumItalic.67e6dda3939a21720991.ttf",
+    "static/media/Montserrat-Italic.ttf": "/static/media/Montserrat-Italic.f4a742d68090a0bfc33f.ttf",
+    "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/static/media/Montserrat-SemiBold.93b37a465fc4ec0d0415.ttf",
+    "static/media/Montserrat-Medium.ttf": "/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
+    "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
+    "static/media/logo.svg": "/static/media/logo.a5c76d8a1dac09edd59db36304e0bcfa.svg",
+    "static/media/star-active.svg": "/static/media/star-active.f47de1483d883b69c6210d622f75c05c.svg",
+    "static/media/star-inactive.svg": "/static/media/star-inactive.c864407432a61da616f95e669105d42e.svg",
+    "index.html": "/index.html",
+    "static/media/next-arrow.svg": "/static/media/next-arrow.20f8ff01b05f9ea0cf55933722f7806c.svg",
+    "static/media/previous-arrow.svg": "/static/media/previous-arrow.3529f3989e39b758930113b6f7a3d1d4.svg",
+    "main.62569a6d.css.map": "/static/css/main.62569a6d.css.map",
+    "main.d59d3587.js.map": "/static/js/main.d59d3587.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62569a6d.css",
+    "static/js/main.d59d3587.js"
+  ]
+}
